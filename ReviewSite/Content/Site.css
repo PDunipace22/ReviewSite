@@ -11,9 +11,27 @@
 .jumbotron {
     display: flex;
     flex-direction: column;
+    background-image: url('images/48850WideModern_TechnologyDevices_131023.jpg');
+    background-size: cover;
     align-items: center;
+    color:white;
 }
-
+#jumbotron1 {
+    display: flex;
+    flex-direction: column;
+    background: url('images/423176.jpg')no-repeat center center;
+    background-size: cover;
+    align-items: center;
+    color: white;
+}
+#jumbotron2 {
+    display: flex;
+    flex-direction: column;
+    
+    background-size: cover;
+    align-items: center;
+    background-color:orange;
+}
 h1 {
     text-align: center;
 }
