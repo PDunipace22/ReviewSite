@@ -12,6 +12,7 @@ namespace ReviewSite.Models
         [Key]
         public int ReviewID { get; set; }
         public string Title { get; set; }
+        [Range(1,10)]// The rating can only be numbers 1 through 10
         public int Rating { get; set; }
         public string Author { get; set; }
         [Display(Name ="Date Published")]

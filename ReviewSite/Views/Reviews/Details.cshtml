@@ -3,64 +3,38 @@
 @{
     ViewBag.Title = "Details";
 }
-
-<h2>Details</h2>
-
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Rating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Rating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.PublishedDate)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PublishedDate)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
-
-    </dl>
+<div class="jumbotron">
+    <h1>Details</h1>
 </div>
+
+<h4>Review</h4>
+<table class="tablel table-striped">
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.Title)</td>
+        <td>@Html.DisplayFor(model => model.Title)</td>
+    </tr>
+    <tr>
+        <td> @Html.DisplayNameFor(model => model.Author)</td>
+        <td> @Html.DisplayFor(model => model.Author)</td>
+    </tr>
+    <tr>
+        <td> @Html.DisplayNameFor(model => model.Category.Name)</td>
+        <td>@Html.DisplayFor(model => model.Category.Name)</td>
+    </tr>
+    <tr>
+        <td> @Html.DisplayNameFor(model => model.Rating)</td>
+        <td> @Html.DisplayFor(model => model.Rating)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model => model.PublishedDate)</td>
+        <td> @Html.DisplayFor(model => model.PublishedDate)</td>
+    </tr>
+    <tr>
+        <td> @Html.DisplayNameFor(model => model.Content)</td>
+        <td>@Html.DisplayFor(model => model.Content)</td>
+    </tr>
+</table>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
+    <button>@Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID })</button>
+    <button>@Html.ActionLink("Back to List", "Index")</button>
 </p>
